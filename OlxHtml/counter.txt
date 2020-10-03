@@ -1,0 +1,13 @@
+Это строку необходимо нам записать
+
+       username: ererewr<br />
+    password: dfgfgfd<br />
+     
+
+  username: ererewr
+  password: gfdg
+     
+
+  username: knighenko@gmail.com
+  password: jhgjhgj
+     
