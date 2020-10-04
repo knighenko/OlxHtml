@@ -1,39 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
     <style>
     html, body{width:100%; height:100%; margin:0}
-    #action_form{
-        position:absolute;
-        width:250px;
-        height:150px;
-        left:50%;
-        top:50%;
-        margin-left:-100px;
-        margin-top:-100px;
-        border:1px solid
-        
+ #action_form{
+        display: block;
+  align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        top: 30%; 
+        position: relative;
+        width:280px;
+        height:180px;
+        border:1px solid;
+        text-align: left; 
     }
-    .fig {
+    .header {
     text-align: center; /* Выравнивание по центру */ 
+     width: 100%;
+     background: #002f34;
+     display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+   margin-left: auto;
+        margin-right: auto;
+    height: 60px;
+    position: relative;
+    
    }
-    .text {
-    text-align: center; /* Выравнивание по центру */ 
-    color: #FF0000;
+
+
+    
+    .input input[type=text] {
+        width: 98%;
+        margin: 3px;
    }
-    form{padding:14px}
+
+
+    .input input[type=password] {
+        width: 98%;
+         margin: 3px;
+   }
+  .enter{
+    border-bottom:1px solid;
+     margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-size: 125%;
+      word-spacing: 30px;
+
+  }
+   .button  {
+    width: 102%;
+    margin-bottom: 10px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    background: #002f34;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px #002f34;
+    border: none;
+   
+    align-items: center;
+    justify-content: center;
+  }
+
+.text{
+    color: red;
+}
+    form{
+        padding:8%;
+
+    }
     </style>
 </head>
 <body>
-<p class="fig"> <img src="logo.png" alt="Письма мастера дзен"></p>
+<p class="header"><img src="logo1.png" alt="OLX - бесплатные объявления"></p>
+
 <div id="action_form">
+    <div class="enter"><u>Войти</u>    Регистрация</div>
     <form action="form.php" method="post">
-        <label for="username">Логин:</label>
-        <input name="username" id="username" type="text" size="30"  placeholder="Email или номер телефона"><br/>
-        <label for="password">Пароль:</label>
-        <input name="password" id="password"  type="password" size="30" placeholder="Ваш текущий пароль от OLX">
-        <p><input type="submit" value="Войти"></p>
+        <label for="username">Email или номер телефона</label>
+        <div class ="input">
+        <input name="username" id="username" type="text"  placeholder="Email или номер телефона"><br/>
+    </div>
+        <label for="password">Ваш текущий пароль от OLX</label>
+        <div class ="input"> <input name="password" id="password"  type="password"  placeholder="Ваш текущий пароль от OLX">
+        </div>
+       <p ><input class="button" type="submit" value="Войти"></p>
  </form>
   <p class="text"> Ошибка ввода данных! Повторите вход!</p>
 </div>
